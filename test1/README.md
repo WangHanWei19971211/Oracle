@@ -11,6 +11,7 @@ GROUP BY department_name;
 
 运行结果：
 ![查询1](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/01.png)
+
 所用时间：
 ![时间1](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/1_time.png)
 
@@ -24,5 +25,6 @@ HAVING d.department_name in ('IT'，'Sales');
 
 运行结果：
 ![查询2](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/02.png)
+
 所用时间：
 ![时间2](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/2_time.png)
