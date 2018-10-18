@@ -28,3 +28,11 @@ HAVING d.department_name in ('IT'，'Sales');
 
 所用时间：
 ![时间2](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/2_time.png)
+
+查询语句一的运行时间是0.187s，查询语句二的运行时间是0.039s
+
+进行优化之后运行的截图：![查询3](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/3.png)
+所用时间：
+![时间3](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/3_time.png)
+
+优化后的运行时间是0.037s
