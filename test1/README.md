@@ -31,6 +31,18 @@ HAVING d.department_name in ('IT'，'Sales');
 
 查询语句一的运行时间是0.187s，查询语句二的运行时间是0.039s
 
+优化后的查询语句：
+SELECT department_name, count(job_id) as "部门总人数", 
+ avg(salary) as "平均工资"
+ FROM hr.employees e
+ JOIN
+ (SELECT d.department_id, d.department_name
+ FROM hr.departments d
+ WHERE d.department_name in ('IT', 'Sales'))
+ USING (department_id)
+GROUP BY department_name;
+
+
 进行优化之后运行的截图：![查询3](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/3.png)
 所用时间：
 ![时间3](https://github.com/WangHanWei19971211/Oracle/blob/master/test1/3_time.png)
