@@ -66,3 +66,5 @@ SQL> GRANT SELECT ON myview TO hr;
 Grant succeeded.
 
 SQL>exit
+
+![第二步](https://github.com/WangHanWei19971211/Oracle/blob/master/test2/2.png)
