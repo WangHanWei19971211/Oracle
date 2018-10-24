@@ -68,3 +68,21 @@ Grant succeeded.
 SQL>exit
 
 ![第二步](https://github.com/WangHanWei19971211/Oracle/blob/master/test2/2.png)
+
+
+第3步：用户hr连接到pdborcl，查询new_wang授予它的视图myview
+
+$ sqlplus hr/123@pdborcl
+
+SQL> SELECT * FROM new_wang.myview;
+
+NAME
+
+--------------------------------------------------
+
+zhang
+
+wang
+
+SQL> exit
+![第三步](https://github.com/WangHanWei19971211/Oracle/blob/master/test2/3.png)
