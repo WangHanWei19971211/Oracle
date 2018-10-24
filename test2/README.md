@@ -85,4 +85,11 @@ zhang
 wang
 
 SQL> exit
+
 ![第三步](https://github.com/WangHanWei19971211/Oracle/blob/master/test2/3.png)
+
+
+查看数据库的使用情况：
+
+![第四步](https://github.com/WangHanWei19971211/Oracle/blob/master/test2/4.png)
+
