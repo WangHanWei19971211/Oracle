@@ -144,3 +144,8 @@ NOCOMPRESS NO INMEMORY
 );
 
 ![第二步](https://github.com/WangHanWei19971211/Oracle/blob/master/test3/orders1.png)
+
+
+查看表空间的数据库文件，以及每个文件的磁盘占用情况:
+
+![3](https://github.com/WangHanWei19971211/Oracle/blob/master/test3/select.png)
