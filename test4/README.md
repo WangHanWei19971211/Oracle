@@ -48,33 +48,58 @@
 创建产品表PRODUCTS语句
 
 CREATE TABLE PRODUCTS
+
 (
+
   PRODUCT_NAME VARCHAR2(40 BYTE) NOT NULL
+  
 , PRODUCT_TYPE VARCHAR2(40 BYTE) NOT NULL
+
 , CONSTRAINT PRODUCTS_PK PRIMARY KEY
+
   (
+  
     PRODUCT_NAME
+    
   )
+  
   ENABLE
+  
 )
+
 LOGGING
+
 TABLESPACE "USERS"
+
 PCTFREE 10
+
 INITRANS 1
+
 STORAGE
+
 (
+
   INITIAL 65536
+  
   NEXT 1048576
+  
   MINEXTENTS 1
+  
   MAXEXTENTS 2147483645
+  
   BUFFER_POOL DEFAULT
+  
 );
 
 ALTER TABLE PRODUCTS
+
 ADD CONSTRAINT PRODUCTS_CHK1 CHECK
+
 (PRODUCT_TYPE IN ('耗材', '手机', '电脑'))
+
 ENABLE;
 
 ![2](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/02.png)
 
-
+创建员工表EMPLOYEES语句：
+![3](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/03.png)
