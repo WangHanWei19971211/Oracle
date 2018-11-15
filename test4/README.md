@@ -46,7 +46,7 @@
 
 
 2、创建产品表PRODUCTS语句
-
+~~~sql
 CREATE TABLE PRODUCTS
 
 (
@@ -98,7 +98,7 @@ ADD CONSTRAINT PRODUCTS_CHK1 CHECK
 (PRODUCT_TYPE IN ('耗材', '手机', '电脑'))
 
 ENABLE;
-
+~~~
 ![2](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/02.png)
 
 
