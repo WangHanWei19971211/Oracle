@@ -39,13 +39,13 @@
 7.查询部门表，统计每个部门的销售总金额。
 
 
-创建部门表DEPARTMENTS语句和执行结果：
+1、创建部门表DEPARTMENTS语句和执行结果：
 
 ![1](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/01.png)
 
 
 
-创建产品表PRODUCTS语句
+2、创建产品表PRODUCTS语句
 
 CREATE TABLE PRODUCTS
 
@@ -101,5 +101,9 @@ ENABLE;
 
 ![2](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/02.png)
 
-创建员工表EMPLOYEES语句：
+
+3、创建员工表EMPLOYEES语句：
 ![3](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/03.png)
+
+4、创建订单表ORDERS
+![4](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/04.png)
