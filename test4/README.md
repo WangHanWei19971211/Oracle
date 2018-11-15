@@ -38,5 +38,90 @@
 
 7.查询部门表，统计每个部门的销售总金额。
 
+创建部门表DEPARTMENTS语句
 
+CREATE TABLE DEPARTMENTS
+
+(
+
+  DEPARTMENT_ID NUMBER(6, 0) NOT NULL
+  
+, DEPARTMENT_NAME VARCHAR2(40 BYTE) NOT NULL
+
+, CONSTRAINT DEPARTMENTS_PK PRIMARY KEY
+
+  (
+  
+    DEPARTMENT_ID
+    
+  )
+  
+  USING INDEX
+  
+  (
+  
+      CREATE UNIQUE INDEX DEPARTMENTS_PK ON DEPARTMENTS (DEPARTMENT_ID ASC)
+      
+      NOLOGGING
+      
+      TABLESPACE USERS
+      
+      PCTFREE 10
+      
+      INITRANS 2
+      
+      STORAGE
+      
+      (
+      
+        INITIAL 65536
+        
+        NEXT 1048576
+        
+        MINEXTENTS 1
+        
+        MAXEXTENTS UNLIMITED
+        
+        BUFFER_POOL DEFAULT
+        
+      )
+      
+      NOPARALLEL
+      
+  )
+  
+  ENABLE
+  
+)
+
+NOLOGGING
+
+TABLESPACE USERS
+
+PCTFREE 10
+
+INITRANS 1
+
+STORAGE
+
+(
+
+  INITIAL 65536
+  
+  NEXT 1048576
+  
+  MINEXTENTS 1
+  
+  MAXEXTENTS UNLIMITED
+  
+  BUFFER_POOL DEFAULT
+  
+)
+
+NOCOMPRESS NO INMEMORY NOPARALLEL;
+
+执行结果
+
+
+![1](https://github.com/WangHanWei19971211/Oracle/blob/master/test4/01.png)
 
